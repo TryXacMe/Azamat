@@ -1,0 +1,32 @@
+* {
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.xy {
+    background-color: red;
+    animation-name: xy;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes xy {
+    0% {
+       transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(100px, 0px);
+    }
+}
